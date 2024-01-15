@@ -296,3 +296,122 @@ p {
         height: 500px;
     }
 }
+/*==== || WHY US || ====*/
+/*==== || STATS || ====*/
+.stats {
+    padding: 8rem 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url(../images/stats-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-center {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.stat span {
+    color: #FFF;
+    font-size: 3.25rem;
+    font-weight: 600;
+}
+h4 {
+    color: rgba(243, 243, 243, 0.5);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+@media (max-width:992px) {
+    .section-center {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
+@media (max-width:768px) {
+    .section-center {
+        grid-template-columns: 1fr;
+    }
+} 
+/*==== || STATS || ====*/
+.menu-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.menu-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.menu-btn {
+    color: #0d0d0d;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(180, 180, 180);
+    padding: 10px 5px;
+}
+.menu-btn:hover {
+    color: rgb(213, 22, 22);
+    border-color: rgb(219, 219, 219);
+}
+.menu-btn:active {
+    color: rgb(213, 22, 22);
+    border-color: inherit;
+}
+.menu-header h3 {
+    color: rgb(213, 22, 22);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2rem;
+}
+.menu-item {
+    text-align: center;
+}
+.menu-item img {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.menu-item h5 {
+    color: #0d0d0d;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.menu-item p {
+    color: rgb(139, 139, 139);
+    margin-bottom: 0.5rem;
+}
+.price {
+    color: rgb(213, 22, 22);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media (max-width:992px) {
+    .menu-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem 2rem;
+    }
+}
+@media (max-width:768px) {
+    .menu-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem 2rem;
+    }
+}
